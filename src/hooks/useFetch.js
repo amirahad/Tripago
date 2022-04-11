@@ -20,8 +20,8 @@ export default function useFetch(url) {
         setError(null);
       } catch (err) {
         setIsPending(false);
-        setError('could not fetch data')
-        console.log(err.message);
+        setError("could not fetch data");
+        // console.log(err.message);
       }
     };
     fetchData();
